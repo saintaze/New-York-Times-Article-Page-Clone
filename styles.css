@@ -1,5 +1,10 @@
 /* RESET */
 
+@font-face {
+  font-family: 'Franklin';
+  src: url('fonts/franklin-normal-700.ttf')  format('truetype')
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -21,7 +26,7 @@ body{
 /* END */
 
 nav{
-  background-color: red;
+  background-color: white;
   height: 3rem;
 }
 
@@ -90,3 +95,92 @@ nav{
   background-color: #e17055;
   height: 40rem;
 }
+
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(226,226,226);
+  padding: 2.1rem 1.3rem;
+}
+
+nav .burger-icon, nav .search-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+nav .burger-icon-button, nav .search-icon-button {
+  margin-right: .5rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: transparent;
+  border: none;
+  transition: all .5s;
+}
+
+
+nav .burger-icon-button:hover, nav .search-icon-button:hover {
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+
+nav .article-category a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Franklin;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .5s;
+}
+
+
+nav .article-category a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav .nyt-logo {
+  width: 19.5rem;
+} 
+
+.left-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-category {
+  margin-left: 2rem;
+}
+
+.right-menu button{
+  background-color: rgb(98,136,165);
+  border: 1px solid #333;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: .8rem 1.2rem; 
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.right-menu button:hover {
+  background-color: rgb(50,104,145);
+}
+
+.middle-logo {
+  height: 2.1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+/* END */
