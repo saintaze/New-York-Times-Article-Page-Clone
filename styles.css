@@ -34,7 +34,7 @@ body {
   color: #444;
 }
 p {
-  font-family: 'Imperial';
+  font-family: "Imperial";
 }
 /* END */
 
@@ -102,7 +102,7 @@ nav .nyt-logo {
   margin-left: 2rem;
 }
 
-.right-menu button {
+.right-menu button , .read-comments {
   background-color: rgb(98, 136, 165);
   border: 1px solid #333;
   color: white;
@@ -113,7 +113,7 @@ nav .nyt-logo {
   transition: all 0.5s;
 }
 
-.right-menu button:hover {
+.right-menu button, .read-comments:hover {
   background-color: rgb(50, 104, 145);
 }
 
@@ -177,10 +177,11 @@ button {
   justify-content: space-between;
   margin-bottom: 1.6rem;
 }
-.date p {
+.date{
   display: flex;
   font-family: "Franklin300";
   font-size: 1.4rem;
+  margin: auto 0rem;
 }
 .social-bar {
   display: flex;
@@ -205,52 +206,64 @@ button {
 }
 /* END */
 /* Main Article Section One */
-  .section-one{
-    font-family: 'Imperial';
-    font-size: 1.9rem;
-    line-height: 3rem;
-  }
-  .section-one p{
-    margin-bottom: 2rem;
-  }
-  .section-one .sub-headings{
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
+.section-one,
+.second-article-part,
+.third-article-part,
+.final-article-part {
+  font-family: "Imperial";
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+.section-one p,
+.second-article-part p,
+.third-article-part p,
+.final-article-part p {
+  margin-bottom: 2rem;
+}
+.section-one .sub-headings,
+.second-article-part .sub-headings,
+.third-article-part .sub-headings,
+.final-article-part .sub-headings {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
 /* END */
 .article-sidebar {
   display: flex;
-  margin-left: 20%;
+  width: 90vw;
+  justify-content: center;
 }
 
-.article-sidebar article {
+.article-sidebar .article {
   flex-grow: 2;
+  max-width: 600px;
 }
 
-.sidebar {
+.article-sidebar .sidebar {
   flex-grow: 1;
-  min-width: 200px;
+  max-width: 20%;
+    /* background-color: #ffeaa7; */
 }
 
-.sidebar {
-  background-color: #ffeaa7;
+
+.second-image-box , .third-image-box{
+  max-width: 100vw;
+  
 }
 
-.secondary-image-box {
-  width: 70%;
+.second-image-box img, .third-image-box img {
+  max-width: 720px;
   margin: 1rem auto;
 }
-
-.secondary-image-box img {
-  width: 100%;
+.comment-and-social{
+  display: flex;
+  justify-content: space-between;
 }
-
-.second-article-part {
-  height: 100rem;
-  width: 60%;
-  margin: 2rem auto;
-  background-color: #a29bfe;
+.read-comments{
+  width: 50%;
+  height: 3.6rem;
+  margin: auto 0rem;
 }
 
 .suggested-articles {
