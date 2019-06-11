@@ -87,7 +87,7 @@ nav{
 }
 
 .suggested-articles {
-  background-color: #00b894;
+  /* background-color: #00b894; */
   height: 40rem;
 }
 
@@ -184,3 +184,50 @@ button {
 
 
 /* END */
+
+
+
+/* Suggested Articles */
+
+.suggested-articles h3 {
+  font-family: Franklin;
+  text-transform: capitalize;
+  font-size: 1.7rem;
+  color: rgb(51,51,51);
+
+}
+
+.suggested-article {
+  width: 33.33%;
+}
+
+.suggested-article img{
+  width: 20vw;
+}
+
+.suggested-article figcaption {
+  
+}
+
+.suggested-article a {
+  text-decoration: none;
+}
+
+.suggested-article figcaption a {
+
+  color: rgb(174,158,152);
+  font-size: 1rem;
+  
+}
+.suggested-article h2 a {
+  font-size: 2rem;
+  font-weight: normal;
+  color: rgb(18,18,18);
+}
+
+.suggested-article time {
+  font-size: 1rem;
+  color: rgb(163,153,153)
+}
+
+/* End */
