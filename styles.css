@@ -228,7 +228,7 @@ button {
 
 /* Suggested Articles */
 
-.more-readings {
+.more-readings, .editors-pick-heading {
   font-family: Franklin;
   text-transform: capitalize;
   font-size: 1.7rem;
@@ -309,4 +309,9 @@ button {
 .editors-pick-heading {
   padding-top: 2rem;
   border-top: 1px solid rgb(51,51,51);
+  transition: all .1s;
+}
+
+.editors-pick-heading span:hover{
+  text-decoration: underline;
 }
