@@ -12,6 +12,22 @@
   font-family: 'Imperial';
   src: url('fonts/imperial-normal-700.ttf')  format('truetype')
 }
+
+@font-face {
+  font-family: 'Cheltenham-small';
+  src: url('fonts/cheltenham-small-normal-400.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Cheltenham-normal';
+  src: url('fonts/cheltenham-normal-500.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Franklin-normal';
+  src: url('fonts/franklin-normal-500.ttf')  format('truetype')
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -106,7 +122,11 @@ nav{
 
 .suggested-articles {
   /* background-color: #00b894; */
-  height: 40rem;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  /* grid-auto-rows: min-content; */
 }
 
 .footer{
@@ -208,45 +228,85 @@ button {
 
 /* Suggested Articles */
 
-.suggested-articles h3 {
+.more-readings {
   font-family: Franklin;
   text-transform: capitalize;
   font-size: 1.7rem;
   color: rgb(51,51,51);
-
 }
 
-.suggested-article {
-  width: 33.33%;
-}
 
 .suggested-article img{
-  width: 20vw;
+  width: 100%;
 }
 
-.suggested-article figcaption {
-  
-}
 
 .suggested-article a {
   text-decoration: none;
 }
 
-.suggested-article figcaption a {
+.suggested-article figcaption {
+  text-align: right;
+}
 
+.suggested-article figcaption a {
+  font-family: Cheltenham-small;
   color: rgb(174,158,152);
   font-size: 1rem;
-  
 }
+
+.suggested-article h2 {
+  width: 94%%;
+}
+
 .suggested-article h2 a {
-  font-size: 2rem;
+  /* display: block; */
+  font-family: Cheltenham-normal;
+  font-size: 1.9rem;
   font-weight: normal;
   color: rgb(18,18,18);
+  transition: all .1s;
+}
+
+.suggested-article h2 a:hover {
+  color:rgb(102,102,102);
 }
 
 .suggested-article time {
-  font-size: 1rem;
+  font-family: Franklin-normal;
+  font-size: 1.2rem;
   color: rgb(163,153,153)
 }
 
+
 /* End */
+
+
+.suggested-article-popular {
+  display: flex;
+}
+
+.suggested-article-popular h3 {
+  margin: 2rem 0;
+  color: rgb(51,51,51);
+}
+
+
+.suggested-article-popular > div:nth-child(1) {
+  border-top: 1px solid rgb(51,51,51);
+  /* background-color: salmon; */
+  flex: 2.7;
+  margin-right: 2rem;
+}
+
+.suggested-article-popular > div:nth-child(2){
+  border-top: 1px solid rgb(51,51,51);
+  flex: 1;
+  /* background-color: goldenrod; */
+}
+
+
+.editors-pick-heading {
+  padding-top: 2rem;
+  border-top: 1px solid rgb(51,51,51);
+}
