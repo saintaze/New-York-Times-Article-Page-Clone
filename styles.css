@@ -4,7 +4,14 @@
   font-family: 'Franklin';
   src: url('fonts/franklin-normal-700.ttf')  format('truetype')
 }
-
+@font-face {
+  font-family: 'Cheltenham';
+  src: url('fonts/cheltenham-italic-700.ttf')  format('truetype')
+}
+@font-face {
+  font-family: 'Imperial';
+  src: url('fonts/imperial-normal-700.ttf')  format('truetype')
+}
 * {
   padding: 0;
   margin: 0;
@@ -38,16 +45,27 @@ nav{
 }
 
 .main-heading{
-  background-color: #00cec9;
-  height: 3rem;
-  width: 60%;
-  margin: 2rem auto; 
+  max-width: 600px;
+  margin: 2rem auto;
+  margin-top: 4.5rem;
+  margin-bottom: 3rem;
+  font-family: Cheltenham;
+  font-size: 4.0rem;
+  font-style: italic;
 }
 
 .main-image{
   width: 100%;
 }
-
+.main-img-caption{
+  max-width: 72%;
+  font-family: Imperial;
+  font-size: 1.5rem;
+}
+.main-img-caption span{
+  color: #777;
+  font-size: 1.3rem;
+}
 .article-sidebar {
   display: flex;
   margin-left: 20%;
@@ -137,6 +155,7 @@ nav .article-category a {
   text-decoration: none;
   text-transform: uppercase;
   transition: all .5s;
+  color: black;
 }
 
 
