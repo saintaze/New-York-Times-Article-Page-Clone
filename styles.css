@@ -48,7 +48,6 @@ p {
 
 /* Media queries */
 @media only screen and (max-width: 600px) {
-  
 }
 
 /* Media queries End */
@@ -157,7 +156,7 @@ button {
   margin: 2rem auto;
   margin-top: 4.5rem;
   margin-bottom: 3rem;
-  font-family: 'Cheltenham Italic 700';
+  font-family: "Cheltenham Italic 700";
   font-size: 4rem;
   font-style: italic;
 }
@@ -167,14 +166,18 @@ button {
 }
 .main-img-caption {
   max-width: 72%;
-  font-family: Imperial;
+  font-family: 'Imperial';
   font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: #666666;
   margin: 1.5rem 0;
   margin-bottom: 4.3rem;
 }
 .main-img-caption span {
-  color: #777;
+  display: inline-block;
+  font-family: 'Imperial';
   font-size: 1.3rem;
+  color: #888888;
 }
 
 /*Main Heading and Image  - END*/
@@ -270,7 +273,7 @@ button {
 .section-one a,
 .second-article-part a,
 .third-article-part a,
-.final-article-part a{
+.final-article-part a {
   color: #326891;
 }
 /* Main Article Sections  - END */
@@ -280,7 +283,7 @@ button {
 .third-image-box {
   max-width: 600px;
 }
-.second-image-box img{
+.second-image-box img {
   margin: 1rem auto;
 }
 .third-image-box img {
@@ -288,80 +291,104 @@ button {
   margin: 1rem auto;
 }
 
-
 /*  General article image prop - END */
 
 /* Mark up  on the image(second image) */
-.interactive-image{
+.interactive-image {
   margin-bottom: 1.5rem;
 }
-.interactive-image h1{
-  font-family: 'Cheltenham normal 800';
+.interactive-image h1 {
+  font-family: "Cheltenham normal 800";
   margin-bottom: 2px;
 }
 .interactive-image span {
-  font-family: 'Cheltenham normal 300';
+  font-family: "Cheltenham normal 300";
   font-size: 1.4rem;
   color: #666666;
 }
-.second-image-box{
+.second-image-box {
   position: relative;
   overflow: hidden;
 }
 
-.second-image-box img{
+.second-image-box img {
   width: 720px;
 }
-.second-image-box .row-1, .second-image-box .row-2{
+.second-image-box .row-1,
+.second-image-box .row-2 {
   display: flex;
   position: absolute;
   z-index: 5;
 }
-.second-image-box .row-1{
-  top:20%;
+.second-image-box .row-1 {
+  top: 20%;
 }
-.second-image-box .row-2{
-  top:65%;
+.second-image-box .row-2 {
+  top: 65%;
 }
 .second-image-box .row-1 .col,
-.second-image-box .row-2 .col{
+.second-image-box .row-2 .col {
   width: 173px;
   padding: 2px;
 }
 .second-image-box .row-1 .col p,
-.second-image-box .row-2 .col p{
+.second-image-box .row-2 .col p {
   display: inline;
-  font-family: 'Franklin300';
+  font-family: "Franklin300";
   font-size: 1.4rem;
   text-align: justify;
 }
 .second-image-box .row-1 .col span,
-.second-image-box .row-2 .col span{
+.second-image-box .row-2 .col span {
   display: inline-flex;
-  font-family: 'Franklin700';
+  font-family: "Franklin700";
   color: black;
   font-size: 1.1rem;
 }
-.interactive-image footer{
+.interactive-image footer {
   margin-bottom: 4.4rem;
 }
-.interactive-image footer p{
-  font-family: 'Franklin300';
+.interactive-image footer p {
+  font-family: "Franklin300";
   font-size: 1.4rem;
   margin-bottom: 1.4rem;
 }
-.interactive-image footer p::before{
+.interactive-image footer p::before {
   width: 60px;
-  content: '';
+  content: "";
   display: block;
   height: 1px;
   margin: 0 0 13px;
   background-color: #000;
-
 }
 /* Mark up  on the image(second image) -END*/
 
+/*Embed player and Third Image */
+.third-image-box, .embed-player{
+  margin-bottom: 2.4rem;
+}
+.third-image-box figcaption, .embed-player figcaption{
+  font-family: 'Imperial';
+  font-size: 1.5rem;
+  color: #666666;
+  margin-top: 1rem;
+}
+.third-image-box figcaption span, .embed-player figcaption span{
+  display: inline-block;
+  font-family: 'Imperial';
+  font-size: 1.3rem;
+  color: #888888;
+}
+/* Embed player and Third Image End */
 /* note and  comments tool bar */
+
+.article-note {
+  color: #999999;
+  font-family: "Franklin300";
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.6rem;
+}
 .comment-and-social {
   display: flex;
   justify-content: space-between;
@@ -375,6 +402,8 @@ button {
 
 /* Article content and Images - END*/
 
+
+
 /* Sidebar Begins */
 
 /* Default Blocks */
@@ -387,14 +416,13 @@ button {
 /* Default Blocks End */
 
 /* Editors Picks Begins */
-.editors-picks-box h3{
+.editors-picks-box h3 {
   margin-bottom: 1.5rem;
-  font-family: 'Franklin700';
+  font-family: "Franklin700";
   font-size: 1.4rem;
   padding-bottom: 1.2rem;
   border-bottom: 0.1rem solid rgb(226, 226, 226);
   margin-bottom: 1.5rem;
-
 }
 .editors-picks-box .pick {
   display: flex;
@@ -412,17 +440,17 @@ button {
 
 /* Sign up box begins*/
 
-.sign-up-box h3{
-  font-family: 'Franklin700';
+.sign-up-box h3 {
+  font-family: "Franklin700";
   font-size: 1.8rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .sign-up-box p {
-  font-family: 'Franklin300';
+  font-family: "Franklin300";
   font-size: 1.3rem;
   margin-bottom: 1rem;
 }
-.sign-up-box button{
+.sign-up-box button {
   background-color: rgb(98, 136, 165);
   border: 1px solid;
   color: white;
@@ -431,7 +459,7 @@ button {
   padding: 0.8rem 1.2rem;
   font-weight: bold;
   transition: all 0.5s;
-  width: 100%
+  width: 100%;
 }
 /* Sign up box End */
 /* Sidebar Ends */
@@ -445,5 +473,3 @@ button {
   background-color: #e17055;
   height: 40rem;
 }
-
-
