@@ -36,7 +36,14 @@ body {
 p {
   font-family: "Imperial";
 }
-/* END */
+/*RESET- END */
+
+/* Media queries */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Media queries End */
 
 /* NAVBAR */
 nav {
@@ -102,7 +109,8 @@ nav .nyt-logo {
   margin-left: 2rem;
 }
 
-.right-menu button , .read-comments {
+.right-menu button,
+.read-comments {
   background-color: rgb(98, 136, 165);
   border: 1px solid #333;
   color: white;
@@ -113,7 +121,8 @@ nav .nyt-logo {
   transition: all 0.5s;
 }
 
-.right-menu button, .read-comments:hover {
+.right-menu button,
+.read-comments:hover {
   background-color: rgb(50, 104, 145);
 }
 
@@ -125,7 +134,7 @@ button {
   cursor: pointer;
 }
 
-/*END*/
+/* NAVBAR - END*/
 
 /* Main Heading and Image */
 .center-col {
@@ -160,13 +169,30 @@ button {
   font-size: 1.3rem;
 }
 
-/*END*/
+/*Main Heading and Image  - END*/
+
+/* Article and sidebar parent */
+.article-sidebar {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+}
+
+.article-sidebar .article {
+  flex-grow: 2;
+  max-width: 600px;
+}
+
+.article-sidebar .sidebar {
+  flex-grow: 1;
+  max-width: 20%;
+  /* background-color: #ffeaa7; */
+}
+
+/* Article and sidebar parent - END */
 
 /* Main Article Tools*/
 
-/* .first-article-part {
-  background-color: aquamarine;
-} */
 .author {
   font-family: "Franklin700";
   font-size: 1.4rem;
@@ -177,7 +203,7 @@ button {
   justify-content: space-between;
   margin-bottom: 1.6rem;
 }
-.date{
+.date {
   display: flex;
   font-family: "Franklin300";
   font-size: 1.4rem;
@@ -204,8 +230,11 @@ button {
 .social-bar .comments {
   font-size: 1.2rem;
 }
-/* END */
-/* Main Article Section One */
+/* Main Article Tools- END */
+
+/* Article content and Images */
+
+/* Main Article Sections  */
 .section-one,
 .second-article-part,
 .third-article-part,
@@ -228,43 +257,100 @@ button {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-/* END */
-.article-sidebar {
-  display: flex;
-  width: 90vw;
-  justify-content: center;
-}
+/* Main Article Sections  - END */
 
-.article-sidebar .article {
-  flex-grow: 2;
+/* General article image prop */
+.second-image-box,
+.third-image-box {
   max-width: 600px;
 }
 
-.article-sidebar .sidebar {
-  flex-grow: 1;
-  max-width: 20%;
-    /* background-color: #ffeaa7; */
-}
-
-
-.second-image-box , .third-image-box{
-  max-width: 100vw;
-  
-}
-
-.second-image-box img, .third-image-box img {
-  max-width: 720px;
+.second-image-box img,
+.third-image-box img {
+  max-width: 100%;
   margin: 1rem auto;
 }
-.comment-and-social{
+/*  General article image prop - END */
+
+/* Mark up  on the image(second image) */
+
+
+/* Mark up  on the image(second image) -END*/
+
+/* note and  comments tool bar */
+.comment-and-social {
   display: flex;
   justify-content: space-between;
 }
-.read-comments{
+.read-comments {
   width: 50%;
   height: 3.6rem;
   margin: auto 0rem;
 }
+/* note and comments toolbar- END*/
+
+/* Article content and Images - END*/
+
+/* Sidebar Begins */
+
+/* Default Blocks */
+.sized-block-1 {
+  height: 985px;
+}
+.sized-block-2 {
+  height: 485px;
+}
+/* Default Blocks End */
+
+/* Editors Picks Begins */
+.editors-picks-box h3{
+  margin-bottom: 1.5rem;
+  font-family: 'Franklin700';
+  font-size: 1.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid rgb(226, 226, 226);
+  margin-bottom: 1.5rem;
+
+}
+.editors-picks-box .pick {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.editors-picks-box .pick img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.editors-picks-box .pick p {
+  margin: auto 0rem auto 1rem;
+}
+/* Editors Picks End */
+
+/* Sign up box begins*/
+
+.sign-up-box h3{
+  font-family: 'Franklin700';
+  font-size: 1.8rem;
+  margin-bottom: .5rem;
+}
+.sign-up-box p {
+  font-family: 'Franklin300';
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.sign-up-box button{
+  background-color: rgb(98, 136, 165);
+  border: 1px solid;
+  color: white;
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  transition: all 0.5s;
+  width: 100%
+}
+/* Sign up box End */
+/* Sidebar Ends */
 
 .suggested-articles {
   background-color: #00b894;
@@ -275,3 +361,5 @@ button {
   background-color: #e17055;
   height: 40rem;
 }
+
+
