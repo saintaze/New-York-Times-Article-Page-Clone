@@ -28,6 +28,11 @@
   src: url('fonts/franklin-normal-500.ttf')  format('truetype')
 }
 
+@font-face {
+  font-family: 'Franklin-normal-700';
+  src: url('fonts/franklin-normal-700.ttf')  format('truetype')
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -341,5 +346,35 @@ footer .homepage-link a {
   text-decoration: none;
   font-size: 1.1rem;
 }
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links-column ul {
+  font-size: 1.4rem;
+  list-style-type: none;
+  font-family: Franklin-normal;
+}
+
+.footer-links-column ul li {
+  color: black;
+  margin: 1.1rem;
+  transition: all .1;
+}
+
+.footer-links-column ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .link-header {
+  text-transform: uppercase;
+  font-family: Franklin-normal-700;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.3rem;;
+}
+
 
 /* End */
