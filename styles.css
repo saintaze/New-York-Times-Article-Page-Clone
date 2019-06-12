@@ -332,7 +332,8 @@ button {
 footer .homepage-link {
   display: flex;
   justify-content: space-between;
-  padding: 1.2rem 0;
+  padding-bottom: 1.2rem;
+  padding-top: 1.3rem;
 }
 
 .footer-top-border {
@@ -375,7 +376,7 @@ footer .homepage-link a {
 footer .link-header {
   text-transform: uppercase;
   font-family: Franklin-normal-700;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1.3rem;;
 }
@@ -383,17 +384,44 @@ footer .link-header {
 .footer-icon {
   height: 1.3rem;
   width: 1.3rem;
+  margin-right: 1rem;
 }
 
 .footer-links-column.column-last {
   padding-left: 2rem;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid rgb(226, 226, 226);
 }
 
-.last-column .additional-links {
-  font-size: 1.5rem;
+.last-column.additional-links {
+  font-size: 1.6rem;
   font-family: Franklin-normal-700;
   font-weight: 700;
+}
+
+.footer-links-column.column-last li:nth-child(5) {
+  margin-bottom: 2.6rem;
+}
+ul.submission-links {
+  margin: 3rem 0;
+  margin-bottom: 1rem;
+}
+
+.submission-links li{
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.column-last .submission-links:last-child {
+  border-top: 1px solid rgb(226, 226, 226);;
+}
+.extras-links {
+  /* padding-top: 2rem; */
+  margin: 1rem 0 !important;
+}
+
+.fun-links li:not(:last-child) {
+  margin-bottom: 1.5rem ;
 }
 
 /* End */
