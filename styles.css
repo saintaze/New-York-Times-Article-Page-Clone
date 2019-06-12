@@ -130,8 +130,8 @@ nav{
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
-  /* grid-auto-rows: min-content; */
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
 }
 
 .footer{
@@ -261,7 +261,9 @@ button {
 }
 
 .suggested-article h2 {
-  width: 94%%;
+  width: 95%;
+  padding-bottom: .5rem;
+  padding-top: .2rem;
 }
 
 .suggested-article h2 a {
@@ -280,7 +282,8 @@ button {
 .suggested-article time {
   font-family: Franklin-normal;
   font-size: 1.2rem;
-  color: rgb(163,153,153)
+  color: rgb(163,153,153);
+ 
 }
 
 
@@ -292,16 +295,16 @@ button {
 }
 
 .suggested-article-popular h3 {
-  margin: 2rem 0;
+  margin-top: 1.6rem;
+  margin-bottom: 1.8rem;
   color: rgb(51,51,51);
 }
 
 
 .suggested-article-popular > div:nth-child(1) {
   border-top: 1px solid rgb(51,51,51);
-  /* background-color: salmon; */
   flex: 2.7;
-  margin-right: 2rem;
+  margin-right: 3rem;
 }
 
 .suggested-article-popular > div:nth-child(2){
@@ -322,9 +325,34 @@ button {
 }
 
 .editors-pick {
-  margin-bottom: 10rem;
+  margin-bottom: 5.7rem;
 }
 
+.most-popular-links {
+  list-style: none;
+  border-top: 1px solid rgb(226,226,226);
+}
+
+.most-popular-link {
+  border-bottom: 1px solid rgb(226,226,226);
+  padding: 1.7rem 0;
+}
+
+.most-popular-links a {
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  font-family: Cheltenham-normal;
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+.most-popular-links a:hover {
+   color: rgb(102, 102, 102);
+ }
+
+
+
+/* End */
 
 
 /* Footer */
@@ -333,7 +361,7 @@ footer .homepage-link {
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.2rem;
-  padding-top: 1.3rem;
+  padding-top: 1rem;
 }
 
 .footer-top-border {
@@ -388,7 +416,7 @@ footer .link-header {
 }
 
 .footer-links-column.column-last {
-  padding-left: 2rem;
+  padding-left: 1.6rem;
   border-left: 1px solid rgb(226, 226, 226);
 }
 
@@ -441,6 +469,12 @@ ul.submission-links {
 
 .bottom-links ul li {
   margin-right: 2rem;
+  transition: all .1s;
+  cursor: pointer;
+}
+
+.bottom-links ul li:hover {
+  text-decoration: underline
 }
 
 .bottom-links {
