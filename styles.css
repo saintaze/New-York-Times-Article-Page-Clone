@@ -9,8 +9,16 @@
   src: url("fonts/franklin-normal-300.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Cheltenham";
+  font-family: "Cheltenham Italic 700";
   src: url("fonts/cheltenham-italic-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cheltenham normal 800";
+  src: url("fonts/cheltenham-normal-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cheltenham normal 300";
+  src: url("fonts/cheltenham-normal-300.ttf") format("truetype");
 }
 @font-face {
   font-family: "Imperial";
@@ -149,7 +157,7 @@ button {
   margin: 2rem auto;
   margin-top: 4.5rem;
   margin-bottom: 3rem;
-  font-family: Cheltenham;
+  font-family: 'Cheltenham Italic 700';
   font-size: 4rem;
   font-style: italic;
 }
@@ -235,6 +243,7 @@ button {
 /* Article content and Images */
 
 /* Main Article Sections  */
+
 .section-one,
 .second-article-part,
 .third-article-part,
@@ -257,6 +266,13 @@ button {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+
+.section-one a,
+.second-article-part a,
+.third-article-part a,
+.final-article-part a{
+  color: #326891;
+}
 /* Main Article Sections  - END */
 
 /* General article image prop */
@@ -264,17 +280,85 @@ button {
 .third-image-box {
   max-width: 600px;
 }
-
-.second-image-box img,
+.second-image-box img{
+  margin: 1rem auto;
+}
 .third-image-box img {
   max-width: 100%;
   margin: 1rem auto;
 }
+
+
 /*  General article image prop - END */
 
 /* Mark up  on the image(second image) */
+.interactive-image{
+  margin-bottom: 1.5rem;
+}
+.interactive-image h1{
+  font-family: 'Cheltenham normal 800';
+  margin-bottom: 2px;
+}
+.interactive-image span {
+  font-family: 'Cheltenham normal 300';
+  font-size: 1.4rem;
+  color: #666666;
+}
+.second-image-box{
+  position: relative;
+  overflow: hidden;
+}
 
+.second-image-box img{
+  width: 720px;
+}
+.second-image-box .row-1, .second-image-box .row-2{
+  display: flex;
+  position: absolute;
+  z-index: 5;
+}
+.second-image-box .row-1{
+  top:20%;
+}
+.second-image-box .row-2{
+  top:65%;
+}
+.second-image-box .row-1 .col,
+.second-image-box .row-2 .col{
+  width: 173px;
+  padding: 2px;
+}
+.second-image-box .row-1 .col p,
+.second-image-box .row-2 .col p{
+  display: inline;
+  font-family: 'Franklin300';
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.second-image-box .row-1 .col span,
+.second-image-box .row-2 .col span{
+  display: inline-flex;
+  font-family: 'Franklin700';
+  color: black;
+  font-size: 1.1rem;
+}
+.interactive-image footer{
+  margin-bottom: 4.4rem;
+}
+.interactive-image footer p{
+  font-family: 'Franklin300';
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+.interactive-image footer p::before{
+  width: 60px;
+  content: '';
+  display: block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
 
+}
 /* Mark up  on the image(second image) -END*/
 
 /* note and  comments tool bar */
