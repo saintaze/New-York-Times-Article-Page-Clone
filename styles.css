@@ -130,7 +130,7 @@ nav{
 }
 
 .footer{
-  background-color: #e17055;
+  /* background-color: #e17055; */
   height: 40rem;
 }
 
@@ -184,7 +184,7 @@ nav .article-category a:hover{
   font-weight: bold;
 }
 
-nav .nyt-logo {
+.nyt-logo {
   width: 19.5rem;
 } 
 
@@ -315,3 +315,31 @@ button {
 .editors-pick-heading span:hover{
   text-decoration: underline;
 }
+
+.editors-pick {
+  margin-bottom: 10rem;
+}
+
+
+
+/* Footer */
+
+footer .homepage-link {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.footer-top-border {
+  height: .4rem;
+  border-top: 2px solid rgb(226,226,226);
+  border-bottom: 1px solid rgb(226,226,226);
+}
+
+footer .homepage-link a {
+  color: rgb(98, 136, 165);
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+/* End */
