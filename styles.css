@@ -402,7 +402,7 @@ footer .link-header {
   margin-bottom: 2.6rem;
 }
 ul.submission-links {
-  margin: 3rem 0;
+  margin-top: 2.2rem;
   margin-bottom: 1rem;
 }
 
@@ -413,10 +413,10 @@ ul.submission-links {
 }
 
 .column-last .submission-links:last-child {
-  border-top: 1px solid rgb(226, 226, 226);;
+  border-top: 1px solid rgb(226, 226, 226);
 }
 .extras-links {
-  /* padding-top: 2rem; */
+
   margin: 1rem 0 !important;
 }
 
@@ -424,4 +424,26 @@ ul.submission-links {
   margin-bottom: 1.5rem ;
 }
 
+.fun-links li:first-child{
+  margin-top: 0;
+}
+
+.bottom-links ul{
+  border-top: 1px solid rgb(226, 226, 226);
+  list-style: none;
+  display: flex;
+  color: rgb(153,153,153);
+  font-size: 1.1rem;
+  font-family: Franklin-normal;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.bottom-links ul li {
+  margin-right: 2rem;
+}
+
+.bottom-links {
+  margin-top: 1rem;
+}
 /* End */
