@@ -1,16 +1,28 @@
 /* RESET */
 
 @font-face {
-  font-family: 'Franklin';
-  src: url('fonts/franklin-normal-700.ttf')  format('truetype')
+  font-family: "Franklin700";
+  src: url("fonts/franklin-normal-700.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Cheltenham';
-  src: url('fonts/cheltenham-italic-700.ttf')  format('truetype')
+  font-family: "Franklin300";
+  src: url("fonts/franklin-normal-300.ttf") format("truetype");
 }
 @font-face {
-  font-family: 'Imperial';
-  src: url('fonts/imperial-normal-700.ttf')  format('truetype')
+  font-family: "Cheltenham Italic 700";
+  src: url("fonts/cheltenham-italic-700.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cheltenham normal 800";
+  src: url("fonts/cheltenham-normal-800.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cheltenham normal 300";
+  src: url("fonts/cheltenham-normal-300.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Imperial";
+  src: url("fonts/imperial-normal-500.ttf") format("truetype");
 }
 
 @font-face {
@@ -39,25 +51,119 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 10px;
 }
 
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: normal;
   line-height: 1;
   color: #444;
 }
+p {
+  font-family: "Imperial";
+}
+/*RESET- END */
 
-/* END */
 
-nav{
+
+
+/* Media queries End */
+
+/* NAVBAR */
+nav {
+  display: flex;
   background-color: white;
   height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 2.1rem 1.3rem;
 }
 
+nav .burger-icon,
+nav .search-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+nav .burger-icon-button,
+nav .search-icon-button {
+  margin-right: 0.5rem;
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s;
+}
+
+nav .burger-icon-button:hover,
+nav .search-icon-button:hover {
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  border: none;
+  cursor: pointer;
+}
+
+nav .article-category a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Franklin700";
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  color: black;
+}
+
+nav .article-category a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+nav .nyt-logo {
+  width: 19.5rem;
+}
+
+.left-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-category {
+  margin-left: 2rem;
+}
+
+.right-menu button,
+.read-comments {
+  background-color: rgb(98, 136, 165);
+  border: 1px solid #333;
+  color: white;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.right-menu button:hover,
+.read-comments:hover {
+  background-color: rgb(50, 104, 145);
+}
+
+.middle-logo {
+  height: 2.1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* NAVBAR - END*/
+
+/* Main Heading and Image */
 .center-col {
   /* background-color: hotpink; */
   width: 84%;
@@ -65,64 +171,79 @@ nav{
   min-height: 300vh;
 }
 
-.main-heading{
+.main-heading {
   max-width: 600px;
   margin: 2rem auto;
   margin-top: 4.5rem;
   margin-bottom: 3rem;
-  font-family: Cheltenham;
-  font-size: 4.0rem;
+  font-family: "Cheltenham Italic 700";
+  font-size: 4rem;
   font-style: italic;
 }
 
-.main-image{
+.main-image {
   width: 100%;
 }
-.main-img-caption{
+.main-img-caption {
   max-width: 72%;
-  font-family: Imperial;
+  font-family: 'Imperial';
   font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: #666666;
+  margin: 1.5rem 0;
+  margin-bottom: 4.3rem;
 }
-.main-img-caption span{
-  color: #777;
+.main-img-caption span {
+  display: inline-block;
+  font-family: 'Imperial';
   font-size: 1.3rem;
+  color: #888888;
 }
+
+/*Main Heading and Image  - END*/
+
+/* Article and sidebar parent */
 .article-sidebar {
   display: flex;
-  margin-left: 20%;
-  height: 100vh;
+  /* width: 90vw;
+  justify-content: center; */
+  padding-bottom: 7rem;
 }
 
-.article-sidebar article{ 
-  flex-grow: 2;
+.article-sidebar .article {
+  /* flex-grow: 2; */
+  /* max-width: 600px; */
+  width: 75%;
+  padding-left: 26%;
 }
 
-.sidebar {
-  flex-grow: 1;
+.article-sidebar .sidebar {
+  /* flex-grow: 1;
+  max-width: 20%; */
+  padding-left: 12rem;
+  /* max-width: 26%; */
+
 }
 
-.first-article-part{
-  background-color: aquamarine;
-}
+/* Article and sidebar parent - END */
 
-.sidebar {
-  background-color: #ffeaa7;
-}
+/* Main Article Tools*/
 
-.secondary-image-box{
-  width: 70%;
-  margin: 1rem auto;
+.author {
+  font-family: "Franklin700";
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
 }
-
-.secondary-image-box img{
- width: 100%;
+.date-and-social-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
 }
-
-.second-article-part {
-  height: 100rem;
-  width: 60%;
-  margin: 2rem auto; 
-  background-color: #a29bfe;
+.date {
+  display: flex;
+  font-family: "Franklin300";
+  font-size: 1.4rem;
+  margin: auto 0rem;
 }
 
 .suggested-articles {
@@ -138,93 +259,291 @@ nav{
   /* background-color: #e17055; */
   height: 40rem;
 }
-
-
-/* NAVBAR */
-
-nav {
+.social-bar {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid rgb(226,226,226);
-  padding: 2.1rem 1.3rem;
+  list-style-type: none;
 }
-
-nav .burger-icon, nav .search-icon {
-  width: 1.6rem;
-  height: 1.6rem;
+.social-bar li {
+  margin: 1rem 0.3rem;
 }
-
-nav .burger-icon-button, nav .search-icon-button {
-  margin-right: .5rem;
+.social-bar li button {
+  margin-right: 0.5rem;
   width: 3.3rem;
   height: 3.3rem;
-  background-color: transparent;
+  background-color: #eee;
   border: none;
-  transition: all .5s;
+  border-radius: 50%;
 }
-
-
-nav .burger-icon-button:hover, nav .search-icon-button:hover {
+.social-bar .bookmark button {
+  background-color: white;
+}
+.social-bar .comments {
+  position: relative;
+  font-size: 1.2rem;
+  width: 4rem;
+  height: 2.3rem;
+  background-color: #fff;
   border-radius: 3px;
-  background-color: #f7f7f7;
-  border: none;
-  cursor: pointer;
+  border: 1px solid #444;
+  padding: .9rem;
+  display: flex;
+  place-items: center;
+}
+.social-bar .comments::after{
+  background-color: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+  width: 0.7rem;
+  height: 0.6rem;
+  border-bottom: 1px solid #444;
+  border-right: 1px solid #444;
+  transform: skew(-42deg) rotate(40deg);
+  bottom: -19%;
+  left: 25%;
+
 }
 
 
-nav .article-category a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  font-family: Franklin;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all .5s;
+/* Main Article Tools- END */
+
+/* Article content and Images */
+
+/* Main Article Sections  */
+
+.section-one,
+.second-article-part,
+.third-article-part,
+.final-article-part {
+  font-family: "Imperial";
+  font-size: 1.9rem;
+  line-height: 3rem;
+}
+.section-one p,
+.second-article-part p,
+.third-article-part p,
+.final-article-part p {
+  margin-bottom: 2rem;
+}
+.section-one .sub-headings,
+.second-article-part .sub-headings,
+.third-article-part .sub-headings,
+.final-article-part .sub-headings {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-one a,
+.second-article-part a,
+.third-article-part a,
+.final-article-part a {
+  color: #326891;
+}
+/* Main Article Sections  - END */
+
+/* General article image prop */
+.second-image-box,
+.third-image-box {
+  max-width: 600px;
+}
+.second-image-box img {
+  margin: 1rem auto;
+}
+.third-image-box img {
+  max-width: 100%;
+  margin: 1rem auto;
+}
+
+/*  General article image prop - END */
+
+/* Mark up  on the image(second image) */
+.interactive-image {
+  margin-bottom: 1.5rem;
+}
+.interactive-image h1 {
+  font-family: "Cheltenham normal 800";
+  margin-bottom: 2px;
+}
+.interactive-image span {
+  font-family: "Cheltenham normal 300";
+  font-size: 1.4rem;
+  color: #666666;
+}
+.second-image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.second-image-box img {
+  width: 720px;
+}
+.second-image-box .row-1,
+.second-image-box .row-2 {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+}
+.second-image-box .row-1 {
+  top: 20%;
+}
+.second-image-box .row-2 {
+  top: 65%;
+}
+.second-image-box .row-1 .col,
+.second-image-box .row-2 .col {
+  width: 173px;
+  padding: 2px;
+}
+.second-image-box .row-1 .col p,
+.second-image-box .row-2 .col p {
+  display: inline;
+  font-family: "Franklin300";
+  font-size: 1.4rem;
+  text-align: justify;
+}
+.second-image-box .row-1 .col span,
+.second-image-box .row-2 .col span {
+  display: inline-flex;
+  font-family: "Franklin700";
   color: black;
+  font-size: 1.1rem;
 }
-
-
-nav .article-category a:hover{
-  text-decoration: underline;
-  font-weight: bold;
+.interactive-image footer {
+  margin-bottom: 4.4rem;
 }
+.interactive-image footer p {
+  font-family: "Franklin300";
+  font-size: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+.interactive-image footer p::before {
+  width: 60px;
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 0 0 13px;
+  background-color: #000;
+}
+/* Mark up  on the image(second image) -END*/
 
 .nyt-logo {
   width: 19.5rem;
 } 
+/*Embed player and Third Image */
+.third-image-box, .embed-player{
+  margin-bottom: 2.4rem;
+}
 
-.left-menu {
+
+.third-image-box figcaption, .embed-player figcaption{
+  font-family: 'Imperial';
+  font-size: 1.5rem;
+  color: #666666;
+  margin-top: 1rem;
+}
+.third-image-box figcaption span, .embed-player figcaption span{
+  display: inline-block;
+  font-family: 'Imperial';
+  font-size: 1.3rem;
+  color: #888888;
+}
+/* Embed player and Third Image End */
+/* note and  comments tool bar */
+
+.article-note {
+  color: #999999;
+  font-family: "Franklin300";
+  font-size: 1.2rem;
+  margin-bottom: 1.4rem;
+  line-height: 1.6rem;
+}
+.comment-and-social {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-
-.article-category {
-  margin-left: 2rem;
+.read-comments {
+  width: 50%;
+  height: 3.6rem;
+  margin: auto 0rem;
 }
+/* note and comments toolbar- END*/
 
-.right-menu button{
-  background-color: rgb(98,136,165);
-  border: 1px solid #333;
+/* Article content and Images - END*/
+
+
+
+/* Sidebar Begins */
+
+/* Default Blocks */
+.sized-block-1 {
+  height: 985px;
+}
+.sized-block-2 {
+  height: 485px;
+}
+/* Default Blocks End */
+
+/* Editors Picks Begins */
+.editors-picks-box h3 {
+  margin-bottom: 1.5rem;
+  font-family: "Franklin700";
+  font-size: 1.4rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid rgb(226, 226, 226);
+  margin-bottom: 1.5rem;
+}
+.editors-picks-box .pick {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.editors-picks-box .pick img {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.editors-picks-box .pick p {
+  margin: auto 0rem auto 1rem;
+  font-size: 1.4rem;
+}
+/* Editors Picks End */
+
+/* Sign up box begins*/
+
+.sign-up-box h3 {
+  font-family: "Franklin700";
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.sign-up-box p {
+  font-family: "Franklin300";
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.sign-up-box button {
+  font-size: 1.2rem;
+  background-color: rgb(98, 136, 165);
+  border: 1px solid;
   color: white;
-  border-radius: 3px;
+  border-radius: 4px;
   text-transform: uppercase;
-  padding: .8rem 1.2rem; 
+  padding: 1rem 1.2rem;
   font-weight: bold;
-  transition: all .5s;
+  transition: all 0.5s;
+  width: 100%;
+}
+/* Sign up box End */
+/* Sidebar Ends */
+
+/* .suggested-articles {
+  background-color: #00b894;
+  height: 40rem;
 }
 
-.right-menu button:hover {
-  background-color: rgb(50,104,145);
-}
-
-.middle-logo {
-  height: 2.1rem;
-}
-
-button {
-  cursor: pointer;
-}
+.footer {
+  background-color: #e17055;
+  height: 40rem;
+} */
 
 
 /* END */
@@ -481,3 +800,115 @@ ul.submission-links {
   margin-top: 1rem;
 }
 /* End */
+
+
+
+/* Media queries */
+
+
+@media only screen and (max-width: 1100px) {
+  .article-sidebar {
+
+  }
+  
+  .article-sidebar .article {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  .article-sidebar .sidebar {
+   display: none;
+   padding: 0;
+   width: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  :root{
+    font-size: 9px;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  :root{
+    font-size: 7px;
+  }
+
+  
+  .article-sidebar .article {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  .article-sidebar .sidebar {
+   display: none;
+   padding: 0;
+   width: 0;
+  }
+  
+}
+
+@media only screen and (max-width: 700px) {
+  .left-menu, .right-menu {
+    display: none;
+  }
+
+  .middle-logo {
+    margin: 0 auto;
+  }
+
+  /* :root{
+    font-size: 6px;
+  } */
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .article-sidebar .article {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+  
+  .article-sidebar .sidebar {
+   display: none;
+   padding: 0;
+   width: 0;
+  }
+
+  .suggested-article-popular > div:nth-child(2) {
+    display: none;
+  }
+
+  .suggested-articles {
+    /* background-color: #00b894; */
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+  }
+
+  .suggested-articles.editors-pick div.suggested-article:nth-child(3){
+    display: none;
+  }
+  
+  .footer-links-column.column-last{
+    display: none;
+  }
+
+  .bottom-links ul li:not(:first-child) {
+    display: none;
+  }
+  
+}
