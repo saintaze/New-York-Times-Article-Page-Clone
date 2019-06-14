@@ -75,12 +75,15 @@ p {
 /* NAVBAR */
 nav {
   display: flex;
+  position: sticky;
+  top:0px;
   background-color: white;
   height: 3rem;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid rgb(226, 226, 226);
   padding: 2.1rem 1.3rem;
+  z-index: 10;
 }
 
 nav .burger-icon,
@@ -168,7 +171,6 @@ button {
   /* background-color: hotpink; */
   width: 84%;
   margin: 2rem auto;
-  min-height: 300vh;
 }
 
 .main-heading {
