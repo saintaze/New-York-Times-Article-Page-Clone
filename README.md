@@ -19,5 +19,4 @@ URL:  [Low Fidelity WireFrame of NYT Article Project](https://www.figma.com/file
 + Saintaze [@saintaze](https://github.com/saintaze/)
 + Imhtapm [@imhtapm](https://github.com/imhtapm)
 
-# Github Page
-Live Version: 
+
