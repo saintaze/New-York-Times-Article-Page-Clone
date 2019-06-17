@@ -12,8 +12,8 @@ URL:  [Low Fidelity WireFrame of NYT Article Project](https://www.figma.com/file
 
 
 # Cloned Page URL
-
-URL: [New York Time Article](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0)
+#### Clone URL: [Live preview](https://new-york-times-article-page-clone.imhta.now.sh)
+#### Original URL: [New York Time Article](https://www.nytimes.com/2014/03/18/science/space/detection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html?_r=0)
 
 # Authors
 + Saintaze [@saintaze](https://github.com/saintaze/)
